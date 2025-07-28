@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La Virtud Rectora del Intercambio – Presentación Completa</title>
+
+    <!-- Tailwind & Font-Awesome (used by all slides) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+
+    <!-- COMMON STYLES extracted once -->
+    <style>
+        html,body{margin:0;padding:0;background:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;}
+        section.slide{
+            width:1280px;
+            min-height:720px;
+            margin:0 auto 2rem auto;
+            background:linear-gradient(135deg,#1a365d 0%,#2c5282 50%,#2b6cb0 100%);
+            position:relative;
+            overflow:hidden;
+            color:#fff;
+            display:flex;
+            flex-direction:column;
+        }
+        /* subtle grid background */
+        section.slide::before{
+            content:'';
+            position:absolute;
+            inset:0;
+            opacity:.05;
+            background-image:linear-gradient(90deg,#fff 1px,transparent 1px),
+                              linear-gradient(180deg,#fff 1px,transparent 1px);
+            background-size:106.666px 100%;
+            pointer-events:none;
+        }
+        /* balance-scale animation (page 1) */
+        .balance-scale{position:relative;height:120px;width:200px;margin:0 auto;}
+        .scale-base,.scale-beam,.scale-pan-left,.scale-pan-right,.scale-chain-left,.scale-chain-right{position:absolute;background:#2c3e50;}
+        .scale-base{bottom:0;left:50%;transform:translateX(-50%);width:16px;height:80px;}
+        .scale-beam{top:20px;left:0;width:200px;height:8px;transform-origin:center;animation:balance 8s ease-in-out infinite;}
+        .scale-pan-left,.scale-pan-right{width:60px;height:12px;background:#3498db;border-radius:50%;top:60px;}
+        .scale-pan-left{left:30px;transform:translateX(-50%);animation:pan-left 8s ease-in-out infinite;}
+        .scale-pan-right{right:-30px;animation:pan-right 8s ease-in-out infinite;}
+        .scale-chain-left,.scale-chain-right{width:2px;height:40px;background:#7f8c8d;top:20px;}
+        .scale-chain-left{left:30px;transform:translateX(-50%);}
+        .scale-chain-right{right:30px;transform:translateX(50%);}
+        @keyframes balance{0%,100%{transform:rotate(0deg);}25%{transform:rotate(2deg);}75%{transform:rotate(-2deg);}}
+        @keyframes pan-left{0%,100%{top:60px;}25%{top:65px;}75%{top:55px;}}
+        @keyframes pan-right{0%,100%{top:60px;}25%{top:55px;}75%{top:65px;}}
+    </style>
+</head>
+<body>
+
+<!-- 1/13 -->
+<section class="slide">
+  <div class="flex flex-col items-center justify-center h-full px-20 text-center">
+    <div class="balance-scale mb-10">
+      <div class="scale-base"></div>
+      <div class="scale-beam"></div>
+      <div class="scale-chain-left"></div>
+      <div class="scale-chain-right"></div>
+      <div class="scale-pan-left"></div>
+      <div class="scale-pan-right"></div>
+    </div>
+    <h1 class="text-5xl font-bold mb-6">La Virtud Rectora del Intercambio</h1>
+    <h2 class="text-3xl font-light mb-12 text-blue-200">Justicia Conmutativa desde Aristóteles hasta la Actualidad</h2>
+    <div class="w-32 h-1 bg-orange-400 rounded mb-12"></div>
+    <div class="flex items-center space-x-4 text-xl">
+      <i class="fas fa-book-open"></i>
+      <p>Una exploración filosófica de la ética del intercambio</p>
+    </div>
+    <div class="mt-10 py-3 px-6 bg-blue-800 bg-opacity-50 rounded-lg flex items-center">
+      <i class="fas fa-question-circle text-orange-300 text-2xl mr-3"></i>
+      <p class="text-lg">Incluye quiz de 10 preguntas de opción múltiple al final</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">Introducción: La Justicia como Eje del Intercambio Humano</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16 flex flex-col space-y-6">
+    <div class="flex items-center mb-8">
+      <div class="w-16 h-16 rounded-full bg-blue-800 flex items-center justify-center mr-6"><i class="fas fa-balance-scale text-3xl text-orange-300"></i></div>
+      <p class="text-white text-2xl font-light">
+        “La justicia no es meramente un conjunto de reglas externas… <span class="font-semibold text-blue-200">una disposición del carácter</span>…”
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-6">
+      <div class="bg-white/10 border-l-4 border-orange-400 p-6 rounded-lg"><i class="fas fa-users text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">El Ser Humano Relacional</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-6 rounded-lg"><i class="fas fa-exchange-alt text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Intercambio como Expresión Fundamental</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-6 rounded-lg"><i class="fas fa-handshake text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Justicia como Principio Equilibrador</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-6 rounded-lg"><i class="fas fa-exclamation-triangle text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Consecuencias de su Ausencia</h3><p class="text-blue-100">…</p></div>
+    </div>
+    <div class="bg-blue-800/30 p-5 rounded-lg border-l-4 border-orange-400">
+      <i class="fas fa-quote-left text-orange-300 text-2xl mt-1 mr-4"></i>
+      <p class="text-white text-lg italic">La moralidad de la “estructura básica de la sociedad” no puede sostenerse si los millones de actos de intercambio… carecen de un anclaje ético propio.</p>
+    </div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">2/13</div>
+</section>
+
+<!-- 3/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">El Fundamento Clásico: El Armazón Aristotélico</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16 flex">
+    <div class="w-1/3 pr-6">
+      <img class="rounded-lg shadow-lg w-full h-auto mb-4" style="height:220px;object-fit:cover" src="https://picture-search.skywork.ai/aippt/image/sheet/31fd51ae274bf5a7739422790955fe81.jpg">
+      <div class="bg-blue-800/30 p-5 rounded-lg">
+        <p class="text-white text-lg italic">“La justicia es la única de las virtudes que… afecta a los otros.”</p>
+        <p class="text-right text-blue-200 text-sm mt-2">– Aristóteles</p>
+      </div>
+    </div>
+    <div class="w-2/3 pl-6">
+      <p class="text-white text-lg mb-6">Aristóteles distingue diferentes formas de justicia…</p>
+      <div class="bg-blue-700/50 rounded-lg p-4 mb-4 flex items-center"><i class="fas fa-balance-scale text-orange-300 text-2xl mr-4"></i><div><h3 class="text-white text-xl font-bold">Justicia</h3><p class="text-blue-100">La virtud completa…</p></div></div>
+      <div class="flex space-x-6 mb-4">
+        <div class="w-1/2 bg-blue-600/40 rounded-lg p-4"><i class="fas fa-gavel text-orange-300 text-xl mr-3"></i><h3 class="text-white text-lg font-semibold">Justicia Universal</h3><p class="text-blue-100 text-sm">Cumplimiento de las leyes…</p></div>
+        <div class="w-1/2 bg-blue-600/40 rounded-lg p-4"><i class="fas fa-coins text-orange-300 text-xl mr-3"></i><h3 class="text-white text-lg font-semibold">Justicia Particular</h3><p class="text-blue-100 text-sm">Se opone a la codicia…</p></div>
+      </div>
+      <div class="flex space-x-6">
+        <div class="w-1/2 bg-blue-500/30 rounded-lg p-4"><i class="fas fa-chart-pie text-orange-300 text-xl mr-3"></i><h3 class="text-white text-lg font-semibold">Justicia Distributiva</h3><p class="text-blue-100 text-sm">Reparto de bienes…</p></div>
+        <div class="w-1/2 bg-blue-500/30 rounded-lg p-4"><i class="fas fa-exchange-alt text-orange-300 text-xl mr-3"></i><h3 class="text-white text-lg font-semibold">Justicia Conmutativa</h3><p class="text-blue-100 text-sm">Rige transacciones…</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">3/13</div>
+</section>
+
+<!-- 4/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">Justicia Conmutativa: Principio de Igualdad Aritmética</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16">
+    <div class="bg-blue-800/40 p-6 rounded-lg mb-8">
+      <div class="flex items-start"><i class="fas fa-equals text-orange-300 text-3xl mr-4 mt-1"></i>
+        <div><h2 class="text-2xl font-semibold mb-2">Definición</h2><p class="text-blue-100 text-lg">La justicia conmutativa rige las relaciones horizontales… <span class="font-bold text-white">igualdad estricta o aritmética</span>…</p></div>
+      </div>
+    </div>
+    <!-- exchange visual -->
+    <div class="flex justify-center items-center mb-10">
+      <div class="w-64 h-24 bg-blue-900/50 rounded-lg flex flex-col items-center justify-center"><i class="fas fa-home text-white text-4xl"></i><p class="text-white mt-2">Casa</p></div>
+      <div class="w-32 mx-6 h-2 bg-orange-400 relative"><div class="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-l-[10px] border-l-orange-400 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent"></div><div class="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-orange-400 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent"></div></div>
+      <div class="w-64 h-24 bg-blue-900/50 rounded-lg flex items-center justify-center flex-col"><i class="fas fa-coins text-yellow-300 text-4xl"></i><p class="text-white mt-2">Valor equivalente</p></div>
+    </div>
+    <div class="grid grid-cols-2 gap-6 mb-6">
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><h3 class="text-xl font-semibold mb-2"><i class="fas fa-balance-scale text-orange-300 mr-3"></i>Igualdad en el Intercambio</h3><p class="text-blue-100">No considera el estatus…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><h3 class="text-xl font-semibold mb-2"><i class="fas fa-handshake text-orange-300 mr-3"></i>Aplicación a Intercambios Voluntarios</h3><p class="text-blue-100">Regula actos contractuales…</p></div>
+    </div>
+    <div class="bg-blue-900/30 p-5 rounded-lg mb-6">
+      <h3 class="text-xl font-semibold mb-2"><i class="fas fa-question-circle text-orange-300 mr-3"></i>El Desafío de la Conmensurabilidad</h3>
+      <p class="text-blue-100 mb-2">¿Cómo lograr igualdad entre cosas cualitativamente diferentes?</p>
+      <div class="flex items-start mt-3"><div class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center mr-4 mt-1"><i class="fas fa-lightbulb text-white"></i></div><div><h4 class="text-white font-semibold">Solución aristotélica:</h4><p class="text-blue-100">La <span class="font-semibold">necesidad</span> (chreia) es la medida común…</p></div></div>
+    </div>
+    <div class="border-l-4 border-orange-400 pl-5 py-2"><p class="text-white italic">“Para que la igualdad logre efectuarse…”</p></div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">4/13</div>
+</section>
+
+<!-- 5/13 (content reproduced verbatim with minimal inline styling) -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">La Doctrina del "Precio Justo"</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16">
+    <div class="flex items-center mb-6"><div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-5"><i class="fas fa-landmark text-2xl text-orange-300"></i></div><p class="text-white text-xl">La doctrina del <span class="font-bold text-orange-300">iustum pretium</span>…</p></div>
+    <h2 class="text-2xl font-semibold text-blue-200 mb-4">Criterios para determinar el precio justo:</h2>
+    <div class="grid grid-cols-3 gap-5 mb-8">
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-users text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Estimación Común</h3><p class="text-blue-100"><em>Communis aestimatio</em>: …</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-tools text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Costos y Trabajo</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-hand-holding-heart text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Utilidad para el Comprador</h3><p class="text-blue-100">…</p></div>
+    </div>
+    <div class="bg-blue-900/40 p-6 rounded-lg mb-6">
+      <h2 class="text-2xl font-semibold text-blue-200 mb-4">La Tensión Fundamental</h2>
+      <div class="flex justify-between items-center">
+        <div class="w-5/12 bg-blue-800/50 p-4 rounded-lg"><i class="fas fa-industry text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Teorías Objetivas del Valor</h3><p class="text-blue-100">…</p></div>
+        <div class="w-1/12 flex justify-center"><i class="fas fa-arrows-alt-h text-orange-300 text-2xl"></i></div>
+        <div class="w-5/12 bg-blue-800/50 p-4 rounded-lg"><i class="fas fa-chart-line text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Teorías Subjetivas del Valor</h3><p class="text-blue-100">…</p></div>
+      </div>
+    </div>
+    <div class="bg-blue-800/30 p-5 rounded-lg border-l-4 border-orange-400"><i class="fas fa-quote-left text-orange-300 text-2xl mt-1 mr-4"></i><p class="text-white text-lg">Con el advenimiento de la economía moderna…</p></div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">5/13</div>
+</section>
+
+<!-- 6/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">El Giro Paradigmático: Justicia Distributiva en Rawls</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16 flex">
+    <div class="w-7/12 pr-8">
+      <p class="text-white text-lg mb-6">El siglo XX fue testigo de un cambio de paradigma… <span class="text-orange-300 font-semibold">equidad en las transacciones</span> … <span class="text-orange-300 font-semibold">equidad de la organización social</span>…</p>
+      <div class="space-y-5">
+        <div class="bg-white/10 border-l-4 border-orange-400 pl-7 pr-4 py-4 rounded-lg relative"><div class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 bg-orange-400 rounded-full"></div><h3 class="text-xl font-semibold mb-1">La Estructura Básica de la Sociedad</h3><p class="text-blue-100">Rawls analiza las principales instituciones…</p></div>
+        <div class="bg-white/10 border-l-4 border-orange-400 pl-7 pr-4 py-4 rounded-lg relative"><div class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 bg-orange-400 rounded-full"></div><h3 class="text-xl font-semibold mb-1">La Posición Original</h3><p class="text-blue-100">Representantes racionales deciden…</p></div>
+        <div class="bg-white/10 border-l-4 border-orange-400 pl-7 pr-4 py-4 rounded-lg relative"><div class="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 bg-orange-400 rounded-full"></div><h3 class="text-xl font-semibold mb-1">El Velo de la Ignorancia</h3><p class="text-blue-100">Los participantes desconocen su posición…</p></div>
+      </div>
+      <div class="mt-8 bg-blue-800/40 p-5 rounded-lg border-l-4 border-orange-400"><i class="fas fa-quote-left text-orange-300 text-2xl mt-1 mr-4"></i><p class="text-white italic">“La teoría de Rawls no se ocupa directamente…”</p></div>
+    </div>
+    <div class="w-5/12 pl-4">
+      <img class="rounded-lg mb-4" src="https://picture-search.skywork.ai/aippt/image/sheet/8f6d6758d06e7bbe19e9a08e31a0123a.jpg">
+      <div class="bg-blue-800/30 rounded-lg p-5">
+        <h3 class="text-xl font-semibold mb-3 flex items-center"><i class="fas fa-exchange-alt text-orange-300 mr-3"></i>Cambio de Enfoque</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-900/50 p-3 rounded-lg"><h4 class="font-semibold text-orange-300 mb-2">Aristóteles</h4><ul class="text-blue-100 text-sm space-y-1"><li>Enfoque micro</li><li>Justicia entre individuos</li><li>Igualdad aritmética</li></ul></div>
+          <div class="bg-blue-900/50 p-3 rounded-lg"><h4 class="font-semibold text-orange-300 mb-2">Rawls</h4><ul class="text-blue-100 text-sm space-y-1"><li>Enfoque macro</li><li>Justicia como equidad social</li><li>Protección de los vulnerables</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">6/13</div>
+</section>
+
+<!-- 7/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">La Justicia Conmutativa en el Liberalismo Contemporáneo</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16">
+    <div class="bg-blue-800/30 p-6 rounded-lg mb-8"><i class="fas fa-quote-left text-orange-300 text-2xl mr-4"></i><p class="text-white text-lg">“Desde esta perspectiva, un intercambio es justo no porque… sino porque el <span class="font-semibold text-blue-200">procedimiento</span> del intercambio ha sido justo.”</p></div>
+    <h2 class="text-2xl text-blue-200 font-semibold mb-3">La Teoría Liberal del Intercambio Justo</h2>
+    <p class="text-white text-lg mb-4">Filósofos liberales contemporáneos… redefiniendo la justicia del intercambio en términos de las condiciones procedimentales.</p>
+    <div class="flex justify-between items-center mt-8">
+      <div class="w-[30%] bg-white/10 rounded-lg p-6"><div class="w-16 h-16 rounded-full bg-blue-700 flex items-center justify-center mx-auto mb-4"><i class="fas fa-handshake text-orange-300 text-3xl"></i></div><h3 class="text-xl font-bold text-center mb-3">Voluntariedad Real</h3><p class="text-blue-100 text-center">…</p></div>
+      <i class="fas fa-arrow-right text-orange-300 text-3xl mx-2"></i>
+      <div class="w-[30%] bg-white/10 rounded-lg p-6"><div class="w-16 h-16 rounded-full bg-blue-700 flex items-center justify-center mx-auto mb-4"><i class="fas fa-info-circle text-orange-300 text-3xl"></i></div><h3 class="text-xl font-bold text-center mb-3">Información Simétrica</h3><p class="text-blue-100 text-center">…</p></div>
+      <i class="fas fa-arrow-right text-orange-300 text-3xl mx-2"></i>
+      <div class="w-[30%] bg-white/10 rounded-lg p-6"><div class="w-16 h-16 rounded-full bg-blue-700 flex items-center justify-center mx-auto mb-4"><i class="fas fa-brain text-orange-300 text-3xl"></i></div><h3 class="text-xl font-bold text-center mb-3">Racionalidad de las Partes</h3><p class="text-blue-100 text-center">…</p></div>
+    </div>
+    <div class="mt-10 flex">
+      <div class="w-1/2 pr-6"><div class="bg-blue-900/40 p-6 rounded-lg h-full"><h3 class="text-xl font-bold mb-3 flex items-center"><i class="fas fa-user-shield text-orange-300 mr-3"></i>Fundamento Ético</h3><p class="text-blue-100">…autonomía y respeto…</p></div></div>
+      <div class="w-1/2 pl-6"><div class="bg-blue-900/40 p-6 rounded-lg h-full"><h3 class="text-xl font-bold mb-3 flex items-center"><i class="fas fa-gavel text-orange-300 mr-3"></i>Rol del Estado</h3><p class="text-blue-100">…garantizar reglas limpias…</p></div></div>
+    </div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">7/13</div>
+</section>
+
+<!-- 8/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">Tensión Central: Procedimiento vs. Resultados</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16">
+    <p class="text-blue-100 text-lg mb-8">La discusión sobre la justicia revela una tensión fundamental…</p>
+    <div class="flex justify-between items-stretch space-x-12 mt-6">
+      <div class="bg-white/10 border-l-4 border-blue-300 w-1/2 p-6 rounded-lg"><div class="flex items-center mb-4"><div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4"><i class="fas fa-gavel text-2xl text-blue-300"></i></div><h2 class="text-2xl font-semibold text-white">Justicia Procedimental</h2></div><ul class="space-y-3 text-blue-100"><li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Heredera de la justicia conmutativa</li><li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Voluntariedad real</li><li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Información simétrica</li><li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Racionalidad</li></ul></div>
+      <div class="w-16 h-16 rounded-full bg-orange-400 flex items-center justify-center text-white font-bold text-2xl self-center">VS</div>
+      <div class="bg-white/10 border-l-4 border-orange-400 w-1/2 p-6 rounded-lg"><div class="flex items-center mb-4"><div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4"><i class="fas fa-balance-scale text-2xl text-orange-300"></i></div><h2 class="text-2xl font-semibold text-white">Justicia de Resultados</h2></div><ul class="space-y-3 text-blue-100"><li><i class="fas fa-check-circle text-orange-300 mr-2"></i>Dominio de la justicia distributiva</li><li><i class="fas fa-check-circle text-orange-300 mr-2"></i>Estructura básica</li><li><i class="fas fa-check-circle text-orange-300 mr-2"></i>Impacto acumulativo</li><li><i class="fas fa-check-circle text-orange-300 mr-2"></i>Igualdad como valor central</li></ul></div>
+    </div>
+    <div class="mt-8 bg-blue-800/40 p-5 rounded-lg"><div class="flex items-start"><div class="w-12 h-12 rounded-full bg-orange-400 flex items-center justify-center"><i class="fas fa-lightbulb text-white text-xl"></i></div><div class="ml-4"><h3 class="text-xl font-semibold mb-2">La Perspectiva Libertaria: Robert Nozick</h3><p class="text-blue-100">Nozick argumenta…</p></div></div></div>
+    <p class="text-center text-white text-lg italic mt-6">El dilema fundamental: ¿Puede una serie de actos micro-justos generar una estructura macro-injusta?</p>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">8/13</div>
+</section>
+
+<!-- 9/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">Desafíos Modernos: Fallos de Mercado y Justicia</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16">
+    <p class="text-blue-100 text-xl mb-6">Los fallos de mercado pueden interpretarse como violaciones sistemáticas de las condiciones de la <span class="font-semibold text-white">justicia conmutativa</span>:</p>
+    <div class="grid grid-cols-3 gap-6 mb-8">
+      <div class="bg-white/10 border-l-4 border-blue-400 p-6 rounded-lg"><div class="flex flex-col items-center mb-4"><div class="w-16 h-16 bg-blue-800 rounded-full flex items-center justify-center mb-3"><i class="fas fa-info-circle text-3xl text-blue-300"></i></div><h3 class="text-xl font-semibold text-center">Información Asimétrica</h3></div><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-6 rounded-lg"><div class="flex flex-col items-center mb-4"><div class="w-16 h-16 bg-orange-900 rounded-full flex items-center justify-center mb-3"><i class="fas fa-crown text-3xl text-orange-300"></i></div><h3 class="text-xl font-semibold text-center">Poder de Monopolio</h3></div><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-green-400 p-6 rounded-lg"><div class="flex flex-col items-center mb-4"><div class="w-16 h-16 bg-green-900 rounded-full flex items-center justify-center mb-3"><i class="fas fa-smog text-3xl text-green-300"></i></div><h3 class="text-xl font-semibold text-center">Externalidades</h3></div><p class="text-blue-100">…</p></div>
+    </div>
+    <div class="bg-blue-800/30 p-6 rounded-lg border-l-4 border-orange-400"><i class="fas fa-lightbulb text-3xl text-orange-300 mr-4"></i><p class="text-white text-lg">La regulación estatal… <span class="font-semibold text-orange-200">restaurar las condiciones de fondo</span>…</p></div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">9/13</div>
+</section>
+
+<!-- 10/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">Confianza y Reciprocidad: Fundamentos del Intercambio Justo</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16 flex">
+    <div class="w-1/3 flex flex-col items-center">
+      <img class="rounded-lg shadow-lg mb-6" style="width:280px" src="https://picture-search.skywork.ai/aippt/image/sheet/b5573f502389633168778fdcdee0dd59.jpg">
+      <div class="relative w-[220px] h-[220px] rounded-full border-2 border-dashed border-orange-400/50 flex items-center justify-center"><div class="w-[180px] h-[180px] rounded-full border border-orange-400/30"></div><div class="absolute w-[140px] h-[140px] rounded-full bg-slate-700/70 flex flex-col items-center justify-center"><i class="fas fa-handshake text-orange-300 text-3xl mb-2"></i><div class="text-white text-center"><div class="font-bold text-lg">Círculo Virtuoso</div><div class="text-blue-200 text-sm">Confianza → Intercambio Justo → Mayor Confianza</div></div></div></div>
+    </div>
+    <div class="w-2/3 pl-10">
+      <p class="text-blue-100 text-lg mb-6">Los modelos económicos a menudo asumen… <span class="text-white font-semibold">capital social invisible</span>: la confianza y la norma de reciprocidad.</p>
+      <div class="grid grid-cols-2 gap-5">
+        <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-chart-line text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Reducción de Costos</h3><p class="text-blue-100 text-sm">…</p></div>
+        <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-balance-scale text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Prerrequisito Ético</h3><p class="text-blue-100 text-sm">…</p></div>
+        <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-award text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Superioridad Cualitativa</h3><p class="text-blue-100 text-sm">…</p></div>
+        <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-exclamation-circle text-orange-300 text-xl mr-3"></i><h3 class="text-xl font-semibold mb-2">Crisis Contemporánea</h3><p class="text-blue-100 text-sm">…</p></div>
+      </div>
+      <div class="mt-6 bg-blue-800/40 p-4 rounded-lg border-l-4 border-orange-400"><i class="fas fa-quote-left text-orange-300 text-xl mt-1 mr-3"></i><p class="text-white italic">“La práctica repetida de intercambios justos…”</p></div>
+    </div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">10/13</div>
+</section>
+
+<!-- 11/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">La Búsqueda de Igualdad en un Mundo Desigual</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16">
+    <div class="flex justify-center mb-10 relative">
+      <div class="w-[250px] h-[100px] bg-blue-800/40 rounded-lg flex flex-col items-center justify-center"><i class="fas fa-handshake text-orange-300 text-3xl mb-2"></i><h3 class="text-white text-lg font-semibold text-center">Igualdad Formal en el Intercambio</h3></div>
+      <div class="w-[100px] h-[4px] bg-gray-300 relative self-center"><i class="fas fa-balance-scale text-gray-300 text-2xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i></div>
+      <div class="w-[250px] h-[100px] bg-red-800/30 rounded-lg flex flex-col items-center justify-center"><i class="fas fa-exclamation-triangle text-orange-300 text-3xl mb-2"></i><h3 class="text-white text-lg font-semibold text-center">Desigualdad Sustancial en Condiciones</h3></div>
+    </div>
+    <div class="bg-blue-800/30 p-5 rounded-lg mb-8 border-l-4 border-orange-400 flex items-center"><i class="fas fa-question-circle text-orange-300 text-3xl mr-4"></i><p class="text-white text-xl">¿Puede un intercambio ser “voluntario” cuando…?</p></div>
+    <div class="grid grid-cols-2 gap-6 mb-8">
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-building text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Asimetrías Corporativas</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-laptop-code text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Mercados Digitales</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-gavel text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Igualdad Formal vs. Sustantiva</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-balance-scale-right text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Interdependencia de las Justicias</h3><p class="text-blue-100">…</p></div>
+    </div>
+    <div class="h-[3px] bg-gradient-to-r from-transparent via-orange-400 to-transparent mb-5"></div>
+    <p class="text-center text-white text-lg italic">“Una estructura básica justa… es la condición de posibilidad…”</p>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">11/13</div>
+</section>
+
+<!-- 12/13 -->
+<section class="slide">
+  <div class="px-16 pt-12">
+    <h1 class="text-4xl font-bold mb-2">Conclusión: Vigencia de la Justicia en el Intercambio</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-8"></div>
+  </div>
+  <div class="px-16">
+    <p class="text-white text-xl mb-8">Nuestro recorrido ha mostrado que… <span class="text-orange-300 font-semibold">la justicia conmutativa sigue siendo… indispensable</span>…</p>
+    <div class="flex justify-center items-center my-8">
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg w-72 text-center"><div class="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-4"><i class="fas fa-handshake text-orange-300 text-2xl"></i></div><h3 class="text-xl font-semibold mb-2">Justicia Conmutativa</h3><p class="text-blue-100 text-sm">Rige las transacciones… igualdad aritmética</p></div>
+      <div class="w-40 px-4"><div class="h-1 bg-gradient-to-r from-orange-400 to-blue-300 relative"><div class="absolute w-3 h-3 rounded-full bg-orange-400 -left-1 -top-1"></div><div class="absolute w-3 h-3 rounded-full bg-blue-300 -right-1 -top-1"></div></div><p class="text-center text-white mt-2">Sinergia necesaria</p></div>
+      <div class="bg-white/10 border-l-4 border-blue-300 p-5 rounded-lg w-72 text-center"><div class="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-4"><i class="fas fa-balance-scale text-blue-300 text-2xl"></i></div><h3 class="text-xl font-semibold mb-2">Justicia Distributiva</h3><p class="text-blue-100 text-sm">Estructura la organización… equidad proporcional</p></div>
+    </div>
+    <div class="grid grid-cols-2 gap-6">
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-check-circle text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Ecosistema Moral Necesario</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-check-circle text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Condiciones para el Intercambio Justo</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-check-circle text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Práctica Cotidiana de la Justicia</h3><p class="text-blue-100">…</p></div>
+      <div class="bg-white/10 border-l-4 border-orange-400 p-5 rounded-lg"><i class="fas fa-check-circle text-orange-300 text-xl mr-3"></i><h3 class="text-lg font-semibold mb-2">Armonía Dinámica</h3><p class="text-blue-100">…</p></div>
+    </div>
+    <div class="mt-8 bg-blue-800/40 p-5 rounded-lg border-l-4 border-orange-400"><i class="fas fa-quote-left text-orange-300 text-2xl mt-1 mr-4"></i><p class="text-white text-lg italic">“Ignorar la justicia conmutativa es dejar… el poder y el interés propio.”</p></div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">12/13</div>
+</section>
+
+<!-- 13/13 Quiz -->
+<section class="slide">
+  <div class="px-16 pt-10">
+    <h1 class="text-4xl font-bold mb-2">Quiz: La Justicia Conmutativa</h1>
+    <div class="w-24 h-1 bg-orange-400 rounded mb-2"></div>
+    <p class="text-blue-200 text-lg">Evalúe su comprensión… 10 preguntas de opción múltiple</p>
+  </div>
+  <div class="px-16 mt-4 grid grid-cols-2 gap-6">
+    <!-- Q1 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">1</div><h3 class="text-white font-medium">Según Aristóteles, la justicia conmutativa se rige por el principio de:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q1" value="0" class="mr-2">Igualdad proporcional o geométrica</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q1" value="1" class="mr-2">Igualdad estricta o aritmética</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q1" value="2" class="mr-2">Mérito individual</label></div></div>
+    <!-- Q2 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">2</div><h3 class="text-white font-medium">La justicia conmutativa se aplica principalmente a:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q2" value="0" class="mr-2">Distribución de bienes comunes</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q2" value="1" class="mr-2">Relaciones y transacciones entre individuos</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q2" value="2" class="mr-2">Asignación de castigos</label></div></div>
+    <!-- Q3 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">3</div><h3 class="text-white font-medium">En la doctrina escolástica, el “precio justo” se determinaba principalmente por:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q3" value="0" class="mr-2">Valor determinado por el Estado</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q3" value="1" class="mr-2">La estimación común (communis aestimatio)</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q3" value="2" class="mr-2">Deseo individual del vendedor</label></div></div>
+    <!-- Q4 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">4</div><h3 class="text-white font-medium">Santo Tomás desarrolló la noción de:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q4" value="0" class="mr-2">“Res iusta”</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q4" value="1" class="mr-2">“Velo de ignorancia”</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q4" value="2" class="mr-2">“Mano invisible”</label></div></div>
+    <!-- Q5 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">5</div><h3 class="text-white font-medium">¿Cuál NO es criterio de precio justo escolástico?</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q5" value="0" class="mr-2">Costos y trabajo</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q5" value="1" class="mr-2">Utilidad para el comprador</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q5" value="2" class="mr-2">Maximización del beneficio empresarial</label></div></div>
+    <!-- Q6 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">6</div><h3 class="text-white font-medium">El cambio paradigma Rawls se caracterizó por:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q6" value="0" class="mr-2">Enfocarse en la justicia conmutativa</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q6" value="1" class="mr-2">Desplazar el foco hacia la justicia distributiva</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q6" value="2" class="mr-2">Eliminar por completo el concepto de justicia</label></div></div>
+    <!-- Q7 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">7</div><h3 class="text-white font-medium">En la visión liberal, un intercambio es justo cuando:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q7" value="0" class="mr-2">Valor intrínseco igual</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q7" value="1" class="mr-2">Procedimiento justo (voluntario e informado)</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q7" value="2" class="mr-2">El Estado regula el precio</label></div></div>
+    <!-- Q8 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">8</div><h3 class="text-white font-medium">¿Cuál representa un fallo de mercado?</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q8" value="0" class="mr-2">Competencia perfecta</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q8" value="1" class="mr-2">Información asimétrica</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q8" value="2" class="mr-2">Libre entrada y salida</label></div></div>
+    <!-- Q9 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">9</div><h3 class="text-white font-medium">La tensión central se da entre:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q9" value="0" class="mr-2">Justicia procedimental y justicia de resultados</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q9" value="1" class="mr-2">Teoría y práctica</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q9" value="2" class="mr-2">Libertad e igualdad</label></div></div>
+    <!-- Q10 -->
+    <div class="bg-white/10 p-4 rounded-lg"><div class="flex items-center mb-2"><div class="w-7 h-7 rounded-full bg-orange-400 text-white font-bold flex items-center justify-center mr-2">10</div><h3 class="text-white font-medium">La conclusión sugiere que:</h3></div><div class="space-y-2 ml-9"><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q10" value="0" class="mr-2">Debe ser reemplazada por la justicia distributiva</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q10" value="1" class="mr-2">Es irrelevante</label><label class="block text-blue-100 cursor-pointer"><input type="radio" name="q10" value="2" class="mr-2">Sigue siendo indispensable y complementaria</label></div></div>
+  </div>
+  <div class="absolute bottom-12 left-0 w-full flex justify-center">
+    <div class="bg-blue-800/50 px-6 py-2 rounded-lg flex items-center"><i class="fas fa-info-circle text-orange-300 mr-3"></i><p class="text-white text-sm">Seleccione una opción para cada pregunta. Las respuestas correctas se discutirán en la sesión de análisis.</p></div>
+  </div>
+  <div class="absolute bottom-5 right-5 text-white/70 text-sm">13/13</div>
+</section>
+
+</body>
+</html>
